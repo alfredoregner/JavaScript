@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Parte2</title>
+</head>
+<body>
+    <script>
+
+        // Número positivo ou negativo
+        // let numero = prompt("Digite um número: ");
+
+        // if (numero > 0 ){
+        //     alert("O número é positivo!");
+        // } else{
+        //     alert("O número é negativo ou zero!");
+        // }
+
+        // Maior ou menor de idade
+        // let idade = prompt("Digite sua idade: ");
+
+        // if(idade >= 18){
+        //     alert("Você é maior de idade!");
+        // } else{
+        //     alert("Você é menor de idade!");
+        // }
+
+        // Número par ou ímpar
+        // let numero = prompt("Digite um número: ");
+
+        // if(numero % 2 === 0){ //3 iguais é para verificar se o tipo de variável também é igual
+        //     alert("O número é par!");
+        // } else{
+        //     alert("O número é ímpar!");
+        // }
+
+        // Acertou ou errou
+        // let numSecreto = 5;
+        // let chute = prompt("Advinhe o número (entre 1 e 10): ");
+
+        // if(chute == numSecreto){
+        //     alert("Você acertou!");
+        // } else{
+        //     alert("Você errou! O número era " + numSecreto);
+        // }
+
+        // else if
+        // let nota = Number(prompt("Digite sua nota (0 a 10)"));
+
+        // if(nota >= 9){
+        //     alert("Excelente! Você tirou uma nota A.");
+        // } else if (nota >= 7){
+        //     alert("bom trabalho! Você tirou uma nota B.");
+        // } else if(nota >= 5 ){
+        //     alert("Você tirou uma nota C. Pode melhorar.");
+        // } else{
+        //     alert("Nota insuficiente. Você tirou uma nota D.");
+        // }
+
+        //1. Verificação de múltiplos números:
+        //Peça três números ao usuário. Verifique se todos são positivos e exiba uma mensagem confirmando ou negando isso
+
+        // let num1 = Number(prompt("Insira o primeiro número: "));
+        // let num2 = Number(prompt("Insira o segundo número: "));
+        // let num3 = Number(prompt("Insira o terceiro número: "));
+
+        // if(Number(num1) > 0 && Number(num2) > 0 && Number(num3) > 0){
+        //     alert("Os três números são positivos");
+        // } else{
+        //     alert("Nem todos os números são positivos");
+        // }
+
+        //2. Calculadora simples:
+        //Pergunte dois números e uma operação matemática (soma, subtração, multiplicação ou divisão). Exiba o resultado apenas se a operação for válida.
+
+        // let num1 = Number(prompt("Insira o primeiro número: "));
+        // let num2 = Number(prompt("Insira o segundo número: "));
+        // let operacao = prompt("Insira o sinal de uma operação (+ - / *)");
+
+        // if(operacao == "+"){
+        //     let res = num1 + num2;
+        //     alert("A soma é: " + Number(res));
+        // }else if(operacao == "-"){
+        //     let res = num1 - num2;
+        //     alert("A soma é: " + Number(res));
+        // }else if(operacao == "/"){
+        //     if(num2 !== 0){
+        //         let res = num1 / num2;
+        //         alert("A soma é: " + Number(res));
+        //     }else{
+        //         alert("Divisão por zero não é permitida")
+        //     }
+        // }else if(operacao == "*"){
+        //     let res = num1 * num2;
+        //     alert("A soma é: " + Number(res));
+        // }else {
+        //     alert("Operador inválido");
+        // }
+
+        //3. Número no intervalo:
+        // Peça um número ao usuário e informe se ele está entre 50 e 100, inclusive.
+
+        // let num = Number(prompt("Insira um número"));
+
+        // if (num >= 50 && num <= 100){
+        //     alert("O número digitado PERTENCE entre 50 e 100");
+        // } else{
+        //     alert("O número NÃO PERTENCE entre 50 e 100");
+        // }
+
+        //4. Desconto em compras:
+        // Pergunte o valor total de uma compra. Se o valor for maior que 100 reais, aplique um desconto de 10% e exiba o valor final. Caso contrário, mostre o valor sem desconto.
+
+        // let compra = Number(prompt("Insira o valor da sua compra: "));
+
+        // if (compra >= 100){
+        //     let total = Number(compra) - (Number(compra) * 0.1);
+        //     alert("O valor da compra com desconto de 10% é de R$" + Number(total.toFixed(2)));
+        // } else{
+        //     alert("O valor total da compra é de R$" + Number(compra.toFixed(2)));
+        // }
+
+        //5. Classificação por altura:
+        // Peça a altura de uma pessoa (em cm) e diga se ela é "Baixa", "Média" ou "Alta". Considere: baixa (< 150 cm), média (150-180 cm) e alta (> 180 cm).
+
+        // let altura = Number(prompt("Insira sua altura: "));
+
+        // if (altura > 180){
+        //     alert("Você é considerada uma pessoa alta");
+        // } else if (altura >= 150 && altura <= 180){
+        //     alert("Você é considerada uma pessoa na média de altura");
+        // } else{
+        //     alert("Você é considerada uma pessoa baixa");
+        // }
+
+        // 6. Verificação de senha:
+        // Pergunte a senha ao usuário e compare com uma senha pré-definida (por exemplo, 1234). Exiba "Acesso permitido" se a senha estiver correta, e "Acesso negado" caso contrário.
+
+        // let senha = Number(1234);
+        // let senhaUsu = Number(prompt("Insira sua senha"));
+
+        // if(senhaUsu === senha){
+        //     alert("Acesso permitido");
+        // } else{
+        //     alert("Acesso Negado");
+        // }
+
+        // 7. Par ou ímpar com extra:
+        // Peça um número ao usuário e informe se ele é par ou ímpar. Se for ímpar e maior que 50, exiba também a mensagem "Número especial".
+
+        // let num = Number(prompt("Insira um número: "));
+
+        // if((Number(num) % 2) == 1 && num > 50){
+        //     alert("Número Especial");
+        // } else{
+        //     alert("Número par");
+        // }
+
+        // 8. Classificação etária completa:
+        // Pergunte a idade do usuário e diga se ele é criança (até 12 anos), adolescente (13-17 anos), adulto (18-64 anos) ou idoso (65 anos ou mais).
+
+        // let idade = Number(prompt("Insira sua idade: "));
+
+        // if(Number(idade) >= 65){
+        //     alert("Idoso");
+        // } else if(Number(idade) <= 64 && Number(idade) >= 18){
+        //     alert("Adulto");
+        // } else if(Number(idade) <= 17 && Number(idade) >= 13){
+        //     alert("Adolescente");
+        // } else{
+        //     alert("Criança");
+        // }
+
+        // 9. Jogo de adivinhação:
+        // Pergunte um número entre 1 e 10. Exiba "Parabéns, você acertou!" se o número for igual a um número pré-definido (por exemplo, 7). Caso contrário, mostre "Tente novamente!".
+
+        // let numSecreto = Number(3);
+        // let num = Number(prompt("Insira um número (1 a 10)"));
+
+        // if (num === numSecreto){
+        //     alert("Parabéns, você acertou!");
+        // } else{
+        //     alert("Tente novamente!");
+        // }
+
+        // 10. Avaliação de desempenho:
+        // - Peça uma nota de 0 a 10 e informe a classificação do desempenho:
+        // - Nota entre 0 e 4: "Ruim".
+        // - Nota entre 5 e 7: "Bom".
+        // - Nota entre 8 e 10: "Excelente".
+
+        // let nota = Number(prompt("Insira uma nota: "));
+
+        // if (Number(nota) >= 8){
+        //     alert("Excelente");
+        // } else if(Number(nota) <= 7 && Number(nota) >= 5){
+        //     alert("Bom");
+        // } else if(Number(nota) < 5 && Number(nota) >= 0){
+        //     alert("Ruim");
+        // } else {
+        //     alert("Nota inválida");
+        // }
+
+        // Desafio
+
+        let nome = prompt("insita seu nome: ");
+        let idade = Number(prompt("Insira sua idade"));
+
+        if(Number(idade) >= 18){
+            let prova = Number(prompt("Insira sua nota da Prova Técnica"));
+
+            if(Number(prova) >=7){
+                let entrevista = Number(prompt("Insira a nota da entrevista"));
+
+                if(Number(entrevista) >=8){
+                    alert(`Parabéns, ${nome}! Você foi aprovado para a vaga.`)
+                    if(((Number(prova) + Number(entrevista)) / 2) >= 8){
+                        alert(`Você é Altamente Qualificado!`)
+                    }
+                } else{
+                    alert(`Infelizmente, ${nome}, sua pontuação na Entrevista foi insuficiente.`)
+                }
+            }else {
+                alert(`Infelizmente, ${nome}, sua pontuação na Prova Técnica foi insuficiente.`)
+            }
+        } else {
+            alert(`Desculpe, ${nome}, você não atende aos critérios de idade.`)
+        }
+        
+        
+
+        
+        
+        
+//         if(Number(prova) >= 7){
+
+// if(Number(entrevista) >= 6){
+
+//     if(Number(prova) + Number(entrevista) / 2 >= 8){
+
+//         alert("Altamente Qualificado!")
+//     }
+// }
+// }
+        
+        
+
+    </script>
+</body>
+</html>
