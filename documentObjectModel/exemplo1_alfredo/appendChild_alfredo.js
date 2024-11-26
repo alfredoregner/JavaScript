@@ -1,0 +1,15 @@
+// Seleciona o título e altera seu texto
+const titulo = document.getElementById("titulo");
+titulo.innerText = "DOM em Ação!";
+
+// Seleciona a lista e adiciona um novo item
+const lista = document.querySelector("ul");
+const novoItem = document.createElement("li");
+novoItem.innerText = "Item 3";
+lista.appendChild(novoItem);
+
+const nome = document.createElement("li");
+nome.innerText = "Alfredo";
+lista.appendChild(nome);
+
+lista.removeChild(novoItem)

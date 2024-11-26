@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="corpo">
+    
+    <h1 id="titulo">
+        Olá Mundo!
+    </h1>
+
+    <script>
+        nome = prompt("Qual seu nome? ");
+        document.getElementById("titulo").innerText = "Bem-vindo! "+ nome; //= altera o que já existe
+
+        document.getElementsByTagName("body")[0].innerHTML += "<h2> Eu sou um h2 inserido pelo JavaScript </h2>"; //+= adiciona um novo
+
+        document.getElementById("corpo").innerHTML += "<h2> H2 criado pelo getElementById no JavaScript </h2>"
+        
+        document.querySelector("body").innerHTML += "<h2> Eu sou um h2 inserido com querySelector pelo JavaScript </h2>"
+
+
+    </script>
+</body>
+</html>
